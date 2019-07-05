@@ -9,7 +9,7 @@ OBJS	= src\virtual.obj src\format.obj src\period.obj src\player.obj src\read_eve
 
 TEST	= test\md5.obj test\test.obj
 
-.c.obj:
+%.obj: %.c
 	$(CC) /c $(CFLAGS) /Fo$*.obj $<
 
 all: $(DLL)
