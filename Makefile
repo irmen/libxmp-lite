@@ -52,7 +52,7 @@ ifneq ($(DARWIN_VERSION),)
   endif
 endif
 
-all:  shared
+all: static shared
 
 include include/libxmp-lite/Makefile
 include src/Makefile
